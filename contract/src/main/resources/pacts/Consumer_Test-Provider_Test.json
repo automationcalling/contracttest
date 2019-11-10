@@ -1,0 +1,43 @@
+{
+  "provider": {
+    "name": "Provider_Test"
+  },
+  "consumer": {
+    "name": "Consumer_Test"
+  },
+  "interactions": [
+    {
+      "description": "GET REQUEST",
+      "request": {
+        "method": "GET",
+        "path": "/employees"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": [
+          {
+            "id": "1",
+            "name": "Muthu",
+            "dept": "Development"
+          }
+        ]
+      },
+      "providerStates": [
+        {
+          "name": "Test GET Request"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "3.0.0"
+    },
+    "pact-jvm": {
+      "version": "4.0.2"
+    }
+  }
+}
